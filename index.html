@@ -1,0 +1,82 @@
+<html lang="en" class="js-loading">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebApp Meteo |By Lo Presti e Marino </title>
+    <link rel="shortcut icon" href="images/LOGO.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="images/LOGO.png" alt="Logo">
+            <!-- <form id="search_form" action="/..." method="post">
+                <label><input id="search_input" size="30" name="keyword" /></label>
+            </form> -->
+            <img src="images/star (1).png" alt="star" class="star">
+        </header>
+        <main>
+            <!-- nome paese al momento  -->
+            <div class="name-city">
+            </div>
+            <!-- sezione della parte meteo attuale  -->
+            <div class="weather-now">
+                <!-- sezione icona  -->
+                <div class="weather-now-icon">
+                    <img src="" alt="" id="now-icon">
+                </div>
+                <!-- sezione dedicata alla descrizione  -->
+                <div class="weather-now-descriptions">
+                    <div class="temperature"></div>
+                    <div class="humidity"></div>
+                    <div class="wind"></div>
+                </div>
+            </div>
+
+            <!-- meteo riguardante i 5 giorni successivi  -->
+            <div class="weather-forecast">
+                <table>
+                    <!-- nome giorno  -->
+                    <tr>
+                        <th id="title-day1" class="forecast-days"></th>
+                        <th id="title-day2" class="forecast-days"></th>
+                        <th id="title-day3" class="forecast-days"></th>
+                        <th id="title-day4" class="forecast-days"></th>
+                    </tr>
+                    <!-- imagine giorno  -->
+                    <tr>
+                        <td><img src="" alt="" id="icon-day1" class="forecast-mini-icon"></td>
+                        <td><img src="" alt="" id="icon-day2" class="forecast-mini-icon"></td>
+                        <td><img src="" alt="" id="icon-day3" class="forecast-mini-icon"></td>
+                        <td><img src="" alt="" id="icon-day4" class="forecast-mini-icon"></td>
+                    </tr>
+                    <!-- gradi del giorno  -->
+                    <tr>
+                        <td id="temperature-day1" class="forecast-mini-text"></td>
+                        <td id="temperature-day2" class="forecast-mini-text"></td>
+                        <td id="temperature-day3" class="forecast-mini-text"></td>
+                        <td id="temperature-day4" class="forecast-mini-text"></td>
+                    </tr>
+                    <tr>
+                        <td id="wind-day1" class="forecast-mini-text"></td>
+                        <td id="wind-day2" class="forecast-mini-text"></td>
+                        <td id="wind-day3" class="forecast-mini-text"></td>
+                        <td id="wind-day4" class="forecast-mini-text"></td>
+                    </tr>
+
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
