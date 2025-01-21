@@ -31,7 +31,7 @@ async function onSuccess(position) {
         const iconDescription = data.weather[0].description;
         const temperatureData = Math.floor(data.main.temp);
         const humidityData = data.main.humidity;
-        const windData = Math.floor(data.wind.speed);
+        const windData = Math.floor(data.wind.speed*3.6);
         const windDirection = getWindDirection(data.wind.deg);
 
         nameCity.innerText = name;
@@ -61,7 +61,7 @@ async function onSuccess(position) {
             iconDay.src = `images/${dataForecast.list[i].weather[0].icon}.png`
             iconDay.alt = dataForecast.list[i].weather[0].description;
             temperatureDay.innerText = `${Math.floor(dataForecast.list[i].temp.min)} - ${Math.floor(dataForecast.list[0].temp.max)}°`;
-            windDay.innerText = `${Math.floor(dataForecast.list[i].speed)} Km/h`;
+            windDay.innerText = `${Math.floor(dataForecast.list[i].speed*3.6)} Km/h`;
         }
 
     } catch (error) {
